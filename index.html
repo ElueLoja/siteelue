@@ -104,6 +104,27 @@
       color: #6e5476;
     }
 
+    .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .whatsapp-float img {
+    width: 35px;
+    height: 35px;
+    }
+
+
     @media (max-width: 700px) {
       h1 {
         font-size: 2rem;
@@ -147,5 +168,10 @@
 
     <a href="#" class="btn">FIQUE DE OLHO!</a>
   </div>
+  
+  <a href="https://wa.me/5547991951959" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+  <img src="https://cdn.jsdelivr.net/gh/rafaelbotazini/whatsapp-float-icon/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+  
 </body>
 </html>
