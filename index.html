@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>  
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
@@ -63,26 +63,22 @@
       height: auto;
     }
 
-    h1 {
-      font-family: 'Bethany Elingston', cursive;
-      color: #e8dde5;
-      font-size: 2.5rem;
-      margin: 10px 0 5px;
-      line-height: 1.3;
+    .headline {
+      margin-top: 10px;
     }
 
     .subtexto {
       font-family: 'Bethany Elingston', cursive;
       font-size: 2.5rem;
       color: #e8dde5;
-      margin: -5px 0 20px;
+      margin: 0;
     }
 
-    p {
+    .headline p {
       font-family: 'Poppins', sans-serif;
       font-size: 1rem;
       color: #ffffff;
-      margin: 0 40px 20px;
+      margin: 10px 40px 20px;
     }
 
     .btn {
@@ -105,43 +101,35 @@
     }
 
     .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .whatsapp-float img {
-    width: 35px;
-    height: 35px;
+      width: 35px;
+      height: 35px;
     }
 
-
     @media (max-width: 700px) {
-      h1 {
-        font-size: 2rem;
-        margin-top: 10px;
-        max-width: 95%;
-        line-height: 1.2;
-      }
-
       .subtexto {
-        font-size: 3rem;
+        font-size: 2rem;
         max-width: 95%;
         margin-top: 10px;
       }
 
-      p {
+      .headline p {
         font-size: 1rem;
-        margin: -25 10px 15px;
+        margin: 10px 20px 15px;
       }
 
       .btn {
@@ -161,18 +149,18 @@
   <div class="container">
     <img src="logodaelue.png" alt="Logo Elue" class="logo"/>
 
-    <!-- Título separado em duas linhas -->
-    <h1></h1>
-    <div class="subtexto">Algo incrível está chegando...</div>
-
-    <p>Uma loja feita especialmente para você.</p>
+    <!-- Headline agrupada -->
+    <div class="headline">
+      <div class="subtexto">Algo incrível está chegando...</div>
+      <p>Uma loja feita especialmente para você.</p>
+    </div>
 
     <a href="#" class="btn">FIQUE DE OLHO!</a>
   </div>
   
+  <!-- Botão WhatsApp -->
   <a href="https://wa.me/5547991951959" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-  <img src="cdnlogo.com_whatsapp-icon.svg" alt="WhatsApp" />
+    <img src="cdnlogo.com_whatsapp-icon.svg" alt="WhatsApp" />
   </a>
-  
 </body>
 </html>
