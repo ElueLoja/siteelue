@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elue - Em Breve</title>
+
+  <!-- Link da fonte Bethany Elingston (use o seu arquivo ou CDN se tiver) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <style>
+    @font-face {
+      font-family: 'Bethany Elingston';
+      src: url('BethanyElingston.ttf') format('truetype'); /* Substitua com o caminho do seu arquivo .ttf */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #6e5476;
+      background-image: url('sua-imagem-de-fundo.jpg'); /* Substitua aqui */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+    }
+
+    /* Overlay escura com opacidade */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #6e5476;
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 220px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Bethany Elingston', cursive;
+      font-size: 2.8rem;
+      color: #e8dde5;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      font-family: 'Bethany Elingston', cursive;
+      font-size: 1.2rem;
+      color: #fdeca9;
+      border: 2px solid #fdeca9;
+      padding: 12px 32px;
+      border-radius: 999px;
+      background: transparent;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #fdeca9;
+      color: #6e5476;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- LOGO -->
+    <img src="logo-elue.svg" alt="Logo Elue" class="logo"/>
+
+    <!-- TÍTULO -->
+    <h1>Algo incrível está chegando...</h1>
+
+    <!-- SUBTÍTULO -->
+    <p>Uma loja feita especialmente para você.</p>
+
+    <!-- BOTÃO -->
+    <a href="#" class="btn">FIQUE DE OLHO!</a>
+  </div>
+</body>
+</html>
